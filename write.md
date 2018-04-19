@@ -8,15 +8,14 @@
 In this project, the goal is to identify lane lines on the road, first in images, and later in a video streams.
 
 [//]: # (Image References)
-
 [image1]: ./examples/grayscale.jpg "Grayscale"
 [image2]: ./test_images_output/edges/solidYellowCurve.jpg "Edges"
 [image3]: ./test_images_output/rawline/solidYellowCurve.jpg "Raw Lines"
 [image4]: ./test_images_output/solidYellowCurve.jpg "Calcualted Lines"
 [image5]: ./test_images_output/All_solidYellowCurve.jpg "Final"
-
 [image6]: ./test_images_output/All_solidWhiteCurve.jpg "Final"
 [image7]: ./test_images_output/All_challenge1.jpg "Final"
+
 ---
 
 ### Reflection
@@ -61,13 +60,14 @@ In this project, the goal is to identify lane lines on the road, first in images
 **The final results with both the raw grouped lines will be like these:**
 
 ![alt text][image5]
+
 ![alt text][image6]
+
 ![alt text][image7]
 
 <video width=<!-- "960" height="540" controls>
         <source src="./test_videos_output/solidWhiteRight.mp4" type="video/mp4" markdown="1" >
 </video>
-
 
 <video width=<!-- "960" height="540" controls>
         <source src="./test_videos_output/solidYellowLeft.mp4" type="video/mp4" markdown="1" >
@@ -77,16 +77,11 @@ In this project, the goal is to identify lane lines on the road, first in images
         <source src="./test_videos_output/challenge.mp4" type="video/mp4" markdown="1" >
 </video>
 
-### 2. Identify potential shortcomings with your current pipeline
-
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
+### 2. Potential shortcomings with your current pipeline
+A) Noise handling. The edges within the ROI in vertical direction are propergated and affects the final computed line.
+B) Lane edges are assumed to be straight lines which does not work well for curve cases.
 
 ### 3. Suggest possible improvements to your pipeline
+A) 
+B) Instead of using averages, use lenght-weighted averages in small region. 
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
