@@ -21,11 +21,11 @@ In this project, the goal is to identify lane lines on the road, first in images
 ### Submission Items:
 Raw line annotated videos udner: 
 
-**'./test_images_output/raw/'**
+**'./test_videos_output/raw/'**
 
 Final annotated video udner: 
 
-**'./test_images_output/'**
+**'./test_videos_output/'**
 
 Intermediate sample images, such as edges, left/right group lines, final image with annoted lines:
 
