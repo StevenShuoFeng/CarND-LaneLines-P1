@@ -67,7 +67,7 @@ Intermediate sample images, such as edges, left/right group lines, final image w
 
 ![alt text][image3]
 
-* C) The average slope and intercept is calculated for each of the two groups and used to draw a line. The drawing is done by pre-defining the vertical coordinate of the two end points of the line. For example, after pre-defining y1 and y2, the x1 and x2 can be calculated with the k and b from step B.
+* C) The **length-weighted** average slope and intercept is calculated for each of the two groups and used to draw a line. The drawing is done by pre-defining the vertical coordinate of the two end points of the line. For example, after pre-defining y1 and y2, the x1 and x2 can be calculated with the k and b from step B.
 
 ![alt text][image4]
 
@@ -98,5 +98,5 @@ B) Lane edges are assumed to be straight lines which does not work well for curv
 
 ### 3. Suggest possible improvements to your pipeline
 A) 
-B) Instead of using averages, use lenght-weighted averages in small region. 
+B) Instead of using averages over the all the lines, progressively calculate lines within smaller region from bottom to up
 
